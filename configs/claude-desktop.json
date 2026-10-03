@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "packet-tracer": {
+      "command": "python",
+      "args": ["-m", "packet_tracer_mcp", "--stdio"]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+# Rahasia lokal OpenCode — jangan pernah di-commit
+service.json
+
+# Token bridge MCP (rahasia per mesin)
+bridge_token
+*token*
+
+# File user / log
+*.log
+__pycache__/
