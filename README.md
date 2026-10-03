@@ -43,6 +43,30 @@ Cek koneksi (prompt ke AI Anda):
 Kalau jawabannya CONNECTED (HTTP atau file-bridge), berarti siap dipakai.
 Detail tiap langkah + troubleshooting ada di [`docs/setup.md`](docs/setup.md).
 
+## Tutorial pasang extension MCP di Packet Tracer (bergambar)
+
+File `.pts`-nya sudah ada di [`extensions/V5.2.pts`](extensions/V5.2.pts).
+
+1. Buka Packet Tracer → menu **Extensions** → **Scripting** →
+   **Configure PT Script Modules…**
+
+   ![Menu Extensions → Scripting](docs/images/01-extensions-menu.png)
+
+2. Di dialog **Configure PT Script Modules**, klik **Add…** lalu pilih file
+   `extensions/V5.2.pts`.
+
+   ![Dialog Configure PT Script Modules](docs/images/02-configure-script-modules.png)
+
+3. Pastikan **MCP-BUILDER** muncul di **Script Module List**, lalu klik **OK**.
+
+   ![MCP-BUILDER terpasang](docs/images/03-mcp-builder-installed.png)
+
+4. Buka **Extensions → MCP BUILDER**. Jendela connect otomatis, tidak ada
+   setting tambahan. Restart AI client supaya config-nya terbaca.
+
+Setelah itu lanjut ke [Setup per client](#setup-per-client) dan tes
+`pt_bridge_status` seperti di atas.
+
 ## Verifikasi topologi
 
 Checklist uji konektivitas, DHCP, dan simulasi ada di
