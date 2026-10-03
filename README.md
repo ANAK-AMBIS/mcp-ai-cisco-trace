@@ -19,9 +19,9 @@ Server MCP-nya client-agnostic — pilih config sesuai aplikasi di `configs/`.
 
 - Python 3.11+
 - Cisco Packet Tracer 8.x+
-- Extension **MCP Control Center V5** (file `.pts`) terpasang di PT:
-  **Extensions → Scripting → Configure PT Script Modules → Add…**,
-  lalu buka **Extensions → MCP BUILDER**
+- Extension **MCP Control Center V5** terpasang di PT — file-nya sudah
+  included di [`extensions/V5.2.pts`](extensions/V5.2.pts),
+  panduan bergambar di [`docs/setup.md`](docs/setup.md)
 - Install server MCP-nya sekali:
   ```powershell
   pip install packet-tracer-mcp
@@ -56,3 +56,9 @@ Checklist uji konektivitas, DHCP, dan simulasi ada di
 - File ini tidak berisi API key / rahasia apa pun, aman di-share publik.
 - Jangan commit `service.json` milik OpenCode atau file `bridge_token`
   (keduanya sudah di-`.gitignore`).
+- Extension `V5.2.pts` adalah karya
+  [Mateo Andres Soto Gareca (Mats2208)](https://github.com/Mats2208/MCP-Packet-Tracer)
+  (tertera di dialog About-nya: v0.5.2, ID `com.matsoto.mcpbuilder`).
+  Disertakan di sini agar teman sekelas tidak perlu download terpisah;
+  versi terbaru selalu di
+  [releases resmi](https://github.com/Mats2208/MCP-Packet-Tracer/releases/latest).
